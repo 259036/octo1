@@ -17,7 +17,7 @@ import React from 'react';
 export default function CtaImmediateHelp() {
   return (
     <section 
-      className="bg-[#e8ecf1] py-[60px] md:py-[100px]"
+      className="bg-background py-[60px] md:py-[100px]"
       id="call-to-action-5-v5Azpn2aTr"
     >
       <div className="container mx-auto px-4 max-w-[1320px]">
@@ -29,7 +29,8 @@ export default function CtaImmediateHelp() {
               p-8 
               md:p-16 
               text-center 
-              shadow-[0_4px_20px_rgba(0,0,0,0.05)]
+              shadow-[0_4px_20px_rgba(0,0,0,0.3)]
+              border border-border/50
             `}>
               <div className="max-w-[800px] mx-auto">
                 <h4 className="font-serif text-[2.5rem] md:text-[3.375rem] font-bold text-white leading-tight mb-6">
