@@ -10,10 +10,10 @@ const HeroSection: React.FC = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[#00305a]/40 z-10" /> {/* Overlay using the primary blue from design system with 0.4 opacity */}
         <div className="relative w-full h-full overflow-hidden">
-          <iframe 
-            className="absolute top-1/2 left-1/2 w-[177.77777778vh] min-w-full min-h-full h-[56.25vw] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-            src="https://www.youtube.com/embed/ezTywV-LZLU?autoplay=1&mute=1&loop=1&playlist=ezTywV-LZLU&controls=0&showinfo=0&autohide=1&modestbranding=1&rel=0&enablejsapi=1&playsinline=1" 
-            title="PV Plumbing Hero Background"
+            <iframe 
+              className="absolute top-1/2 left-1/2 w-[177.77777778vh] min-w-full min-h-full h-[56.25vw] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+              src="https://www.youtube.com/embed/fl7RAFrzGjs?autoplay=1&mute=1&loop=1&playlist=fl7RAFrzGjs&controls=0&showinfo=0&autohide=1&modestbranding=1&rel=0&enablejsapi=1&playsinline=1" 
+              title="PV Plumbing Hero Background"
             allow="autoplay; fullscreen"
           />
         </div>
