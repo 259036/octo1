@@ -18,13 +18,13 @@ const VideoDivider = () => {
 
       {/* Video Container */}
       <div className="absolute inset-0 w-full h-full z-10 pointer-events-none overflow-hidden">
-        <iframe 
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[177.77777778vh] min-w-full h-[56.25vw] min-h-full"
-          src="https://www.youtube.com/embed/0CSH2hRYt8Y?autoplay=1&mute=1&loop=1&playlist=0CSH2hRYt8Y&controls=0&showinfo=0&rel=0&enablejsapi=1&mode=transparent" 
-          allow="autoplay; fullscreen"
-          title="Technician Video Background"
-          style={{ border: 'none' }}
-        />
+          <iframe 
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[177.77777778vh] min-w-full h-[56.25vw] min-h-full"
+            src="https://www.youtube.com/embed/fl7RAFrzGjs?autoplay=1&mute=1&loop=1&playlist=fl7RAFrzGjs&controls=0&showinfo=0&rel=0&enablejsapi=1&mode=transparent" 
+            allow="autoplay; fullscreen"
+            title="Technician Video Background"
+            style={{ border: 'none' }}
+          />
       </div>
 
       {/* Navy Overlay (0.4 opacity as per design system) */}
