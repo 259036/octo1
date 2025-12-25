@@ -2,35 +2,35 @@ import React from 'react';
 
 const ContactsMap = () => {
   return (
-    <section className="bg-[#e8ecf1] py-[60px] md:py-[100px]">
+    <section className="bg-muted py-[60px] md:py-[100px]">
       <div className="container mx-auto px-4 max-w-[1320px]">
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-8">
           {/* Contact Information Block */}
           <div className="w-full lg:w-1/3 text-left">
-            <h3 className="font-display text-[2.5rem] md:text-[3rem] font-bold text-black leading-tight mb-8">
+            <h3 className="font-display text-[2.5rem] md:text-[3rem] font-bold text-foreground leading-tight mb-8">
               Our<br />
               Contacts
             </h3>
             
-            <div className="space-y-4 font-sans text-[1.1rem] text-[#232323] leading-relaxed">
+            <div className="space-y-4 font-sans text-[1.1rem] text-foreground/90 leading-relaxed">
               <p className="flex flex-col">
                 <span className="font-bold">Phone:</span>
-                <a href="tel:5551234567" className="hover:text-primary transition-colors">555-123-4567</a>
+                <a href="tel:5551234567" className="hover:text-primary transition-colors text-foreground">555-123-4567</a>
               </p>
               
               <p className="flex flex-col">
                 <span className="font-bold">Email:</span>
-                <a href="mailto:info@pvplumbing.com" className="hover:text-primary transition-colors">info@pvplumbing.com</a>
+                <a href="mailto:info@pvplumbing.com" className="hover:text-primary transition-colors text-foreground">info@pvplumbing.com</a>
               </p>
               
               <p className="flex flex-col">
                 <span className="font-bold">Address:</span>
-                <span>123 Water St, Pipeville, CA 90210</span>
+                <span className="text-foreground">123 Water St, Pipeville, CA 90210</span>
               </p>
               
               <p className="flex flex-col">
                 <span className="font-bold">Working Hours:</span>
-                <span>24/7 Emergency Service Available</span>
+                <span className="text-foreground">24/7 Emergency Service Available</span>
               </p>
             </div>
           </div>
@@ -47,21 +47,21 @@ const ContactsMap = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="PV Plumbing Location Map"
-                className="grayscale-[0.2] contrast-[1.1]"
+                className="grayscale-[0.5] contrast-[1.1] invert-[0.9] hue-rotate-[180deg]"
               ></iframe>
               
-              {/* Fake UI Overlay elements to match the screenshot exactly */}
-              <div className="absolute top-4 left-4 bg-white p-3 rounded-md shadow-md hidden md:block">
-                <div className="text-sm font-bold text-black">350 5th Ave</div>
+              {/* Fake UI Overlay elements */}
+              <div className="absolute top-4 left-4 bg-background p-3 rounded-md shadow-md hidden md:block border border-border">
+                <div className="text-sm font-bold text-foreground">350 5th Ave</div>
                 <div className="text-xs text-muted-foreground mr-12 text-nowrap">350 5th Ave, New York, NY 10118, USA</div>
-                <a href="#" className="text-blue-500 text-xs mt-1 block">View larger map</a>
+                <a href="#" className="text-accent text-xs mt-1 block">View larger map</a>
               </div>
               
-              <div className="absolute top-4 right-4 bg-white p-2 rounded shadow-md hidden md:flex items-center gap-1">
-                <svg className="w-4 h-4 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+              <div className="absolute top-4 right-4 bg-background p-2 rounded shadow-md hidden md:flex items-center gap-1 border border-border">
+                <svg className="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8.5v-4.5c0-.28.22-.5.5-.5h5V7.5L18 11l-4 3.5z" />
                 </svg>
-                <span className="text-xs font-semibold">Directions</span>
+                <span className="text-xs font-semibold text-foreground">Directions</span>
               </div>
             </div>
           </div>
