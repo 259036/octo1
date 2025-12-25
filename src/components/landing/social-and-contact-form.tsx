@@ -15,10 +15,10 @@ import { Facebook, Twitter, Instagram, Linkedin, Twitch } from 'lucide-react';
 
 const SocialAndContactForm: React.FC = () => {
   return (
-    <div className="flex flex-col w-full bg-white">
+    <div className="flex flex-col w-full bg-background">
       {/* Connect With Us Section */}
-      <section className="py-[100px] md:py-[60px] flex flex-col items-center justify-center bg-white px-4">
-        <h2 className="text-[3rem] md:text-[2.25rem] font-bold font-display text-black mb-8 text-center">
+      <section className="py-[100px] md:py-[60px] flex flex-col items-center justify-center bg-background px-4">
+        <h2 className="text-[3rem] md:text-[2.25rem] font-bold font-display text-foreground mb-8 text-center">
           Connect With Us
         </h2>
         <div className="flex items-center justify-center gap-4">
@@ -31,9 +31,9 @@ const SocialAndContactForm: React.FC = () => {
       </section>
 
       {/* Get In Touch Section */}
-      <section id="contact-form" className="py-[100px] md:py-[60px] bg-[#e8ecf1] px-4">
+      <section id="contact-form" className="py-[100px] md:py-[60px] bg-muted px-4">
         <div className="max-w-[1320px] mx-auto">
-          <h2 className="text-[3rem] md:text-[2.25rem] font-bold font-display text-black mb-12 text-center">
+          <h2 className="text-[3rem] md:text-[2.25rem] font-bold font-display text-foreground mb-12 text-center">
             Get In Touch
           </h2>
           <form className="max-w-[900px] mx-auto space-y-4">
@@ -41,23 +41,23 @@ const SocialAndContactForm: React.FC = () => {
               <input
                 type="text"
                 placeholder="Name"
-                className="w-full h-[58px] px-6 text-[1.1rem] bg-white border-none rounded-[100px] shadow-sm focus:outline-none focus:ring-2 focus:ring-[#00305a] text-[#232323] placeholder:text-[#737373]"
+                className="w-full h-[58px] px-6 text-[1.1rem] bg-background border border-border rounded-[100px] shadow-sm focus:outline-none focus:ring-2 focus:ring-[#eed36d] text-foreground placeholder:text-muted-foreground"
               />
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full h-[58px] px-6 text-[1.1rem] bg-white border-none rounded-[100px] shadow-sm focus:outline-none focus:ring-2 focus:ring-[#00305a] text-[#232323] placeholder:text-[#737373]"
+                className="w-full h-[58px] px-6 text-[1.1rem] bg-background border border-border rounded-[100px] shadow-sm focus:outline-none focus:ring-2 focus:ring-[#eed36d] text-foreground placeholder:text-muted-foreground"
               />
             </div>
             <input
               type="tel"
               placeholder="Phone"
-              className="w-full h-[58px] px-6 text-[1.1rem] bg-white border-none rounded-[100px] shadow-sm focus:outline-none focus:ring-2 focus:ring-[#00305a] text-[#232323] placeholder:text-[#737373]"
+              className="w-full h-[58px] px-6 text-[1.1rem] bg-background border border-border rounded-[100px] shadow-sm focus:outline-none focus:ring-2 focus:ring-[#eed36d] text-foreground placeholder:text-muted-foreground"
             />
             <textarea
               placeholder="Message"
               rows={4}
-              className="w-full p-6 text-[1.1rem] bg-white border-none rounded-[30px] shadow-sm focus:outline-none focus:ring-2 focus:ring-[#00305a] text-[#232323] placeholder:text-[#737373] resize-none"
+              className="w-full p-6 text-[1.1rem] bg-background border border-border rounded-[30px] shadow-sm focus:outline-none focus:ring-2 focus:ring-[#eed36d] text-foreground placeholder:text-muted-foreground resize-none"
             ></textarea>
             <div className="flex justify-center pt-4">
               <button

@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const StatsAndAbout = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-background">
       {/* Hero Image Section */}
       <section className="w-full">
         <div className="relative w-full h-[500px] md:h-[600px] overflow-hidden">
@@ -18,7 +18,7 @@ const StatsAndAbout = () => {
       </section>
 
       {/* Statistics Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4 max-w-[1320px]">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             {/* Stat 1 */}
@@ -26,7 +26,7 @@ const StatsAndAbout = () => {
               <h2 className="text-[#eed36d] font-display text-[3rem] md:text-[4rem] font-bold mb-2 leading-none">
                 1500+
               </h2>
-              <p className="text-[#000000] font-sans text-[1.25rem] font-bold">
+              <p className="text-foreground font-sans text-[1.25rem] font-bold">
                 Happy Clients
               </p>
             </div>
@@ -35,7 +35,7 @@ const StatsAndAbout = () => {
               <h2 className="text-[#eed36d] font-display text-[3rem] md:text-[4rem] font-bold mb-2 leading-none">
                 20+
               </h2>
-              <p className="text-[#000000] font-sans text-[1.25rem] font-bold">
+              <p className="text-foreground font-sans text-[1.25rem] font-bold">
                 Years Experience
               </p>
             </div>
@@ -44,7 +44,7 @@ const StatsAndAbout = () => {
               <h2 className="text-[#eed36d] font-display text-[3rem] md:text-[4rem] font-bold mb-2 leading-none">
                 99%
               </h2>
-              <p className="text-[#000000] font-sans text-[1.25rem] font-bold">
+              <p className="text-foreground font-sans text-[1.25rem] font-bold">
                 Success Rate
               </p>
             </div>
@@ -53,14 +53,14 @@ const StatsAndAbout = () => {
       </section>
 
       {/* About Section */}
-      <section className="pb-24 pt-10 bg-white">
+      <section className="pb-24 pt-10 bg-background">
         <div className="container mx-auto px-4 max-w-[900px]">
           <div className="text-center md:text-left">
-            <h2 className="text-[#000000] font-display text-[2.5rem] md:text-[3rem] font-bold mb-8 text-center">
+            <h2 className="text-foreground font-display text-[2.5rem] md:text-[3rem] font-bold mb-8 text-center">
               PV Plumbing: Your Trusted Pros
             </h2>
             
-            <div className="space-y-6 text-[#232323] font-sans text-[1.1rem] leading-[1.6]">
+            <div className="space-y-6 text-foreground/90 font-sans text-[1.1rem] leading-[1.6]">
               <p>
                 Founded in 2010 by industry veterans, Maria and Carlos Garcia, PV Plumbing was born from a shared passion for providing reliable and high-quality plumbing solutions. We saw a need for a service that prioritized customer satisfaction and technical expertise, and we set out to build a company that exceeded expectations.
               </p>

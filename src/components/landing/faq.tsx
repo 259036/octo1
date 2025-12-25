@@ -40,11 +40,11 @@ const FAQSection: React.FC = () => {
   };
 
   return (
-    <section className="bg-[#e8ecf1] py-[100px] md:py-[60px]" id="faq-1-v5Azpn6Qxq">
+    <section className="bg-muted py-[100px] md:py-[60px]" id="faq-1-v5Azpn6Qxq">
       <div className="container max-w-[1320px] mx-auto px-4">
         <div className="flex justify-center mb-12">
           <div className="w-full lg:w-10/12">
-            <h2 className="font-display text-[3rem] md:text-[2.25rem] font-bold text-center mb-0 leading-[1.2]">
+            <h2 className="font-display text-[3rem] md:text-[2.25rem] font-bold text-center mb-0 leading-[1.2] text-foreground">
               FAQs
             </h2>
           </div>
@@ -56,20 +56,19 @@ const FAQSection: React.FC = () => {
               {faqData.map((item, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-[20px] overflow-hidden transition-shadow duration-300"
-                  style={{ boxShadow: "0 4px 20px rgba(0, 0, 0, 0.05)" }}
+                  className="bg-card rounded-[20px] overflow-hidden transition-shadow duration-300 border border-border"
                 >
                   <button
                     onClick={() => toggleAccordion(index)}
                     className="w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none group"
                     aria-expanded={openIndex === index}
                   >
-                    <h6 className="font-sans text-[1.25rem] font-semibold text-[#000000] m-0 leading-[1.4]">
+                    <h6 className="font-sans text-[1.25rem] font-semibold text-foreground m-0 leading-[1.4]">
                       {item.question}
                     </h6>
                     <ChevronDown
                       className={cn(
-                        "w-5 h-5 text-[#232323] transition-transform duration-300 flex-shrink-0",
+                        "w-5 h-5 text-foreground/70 transition-transform duration-300 flex-shrink-0",
                         openIndex === index ? "rotate-180" : "rotate-0"
                       )}
                     />
@@ -84,7 +83,7 @@ const FAQSection: React.FC = () => {
                   >
                     <div className="overflow-hidden">
                       <div className="px-6 pb-6 md:px-8 md:pb-8">
-                        <p className="font-sans text-[1.1rem] text-[#232323] leading-[1.6] m-0">
+                        <p className="font-sans text-[1.1rem] text-foreground/90 leading-[1.6] m-0">
                           {item.answer}
                         </p>
                       </div>
