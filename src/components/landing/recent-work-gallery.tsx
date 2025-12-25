@@ -14,7 +14,7 @@ const RecentWorkGallery = () => {
 
   return (
     <section 
-      className="bg-[#ffffff] overflow-hidden" 
+      className="bg-background overflow-hidden" 
       style={{ 
         paddingTop: '100px', 
         paddingBottom: '100px' 
@@ -24,7 +24,7 @@ const RecentWorkGallery = () => {
         {/* Section Header */}
         <div className="row justify-content-center mb-[48px]">
           <div className="col-12">
-            <h2 className="text-center font-display font-bold mb-0 text-[3rem] md:text-[3rem] text-black">
+            <h2 className="text-center font-display font-bold mb-0 text-[3rem] md:text-[3rem] text-foreground">
               Our Recent Work
             </h2>
           </div>
@@ -39,7 +39,7 @@ const RecentWorkGallery = () => {
                 className="inline-block px-[15px] flex-shrink-0"
                 style={{ width: '400px' }}
               >
-                <div className="relative w-full h-[300px] overflow-hidden rounded-[20px]">
+                <div className="relative w-full h-[300px] overflow-hidden rounded-[20px] border border-border">
                   <Image
                     src={src}
                     alt={`Recent work plumbing project ${index + 1}`}
